@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePlaceActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="38dp">
+
+            <EditText
+                android:id="@+id/baslik_text_create_place_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="86dp"
+                android:ems="10"
+                android:hint="Başlik"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ilce_text_create_place_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="1dp"
+                android:ems="10"
+                android:hint="İlçe"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/baslik_text_create_place_ac"
+                app:layout_constraintTop_toBottomOf="@+id/baslik_text_create_place_ac" />
+
+            <EditText
+                android:id="@+id/tarih_text_create_place_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:hint="Tarih"
+                android:inputType="date"
+                app:layout_constraintStart_toStartOf="@+id/ilce_text_create_place_ac"
+                app:layout_constraintTop_toBottomOf="@+id/ilce_text_create_place_ac" />
+
+            <EditText
+                android:id="@+id/saat_text_create_place_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:ems="10"
+                android:hint="Saat"
+                android:inputType="time"
+                app:layout_constraintStart_toStartOf="@+id/tarih_text_create_place_ac"
+                app:layout_constraintTop_toBottomOf="@+id/tarih_text_create_place_ac" />
+
+            <EditText
+                android:id="@+id/pozisyon_text_create_place_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:hint="Pozisyon"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/saat_text_create_place_ac"
+                app:layout_constraintTop_toBottomOf="@+id/saat_text_create_place_ac" />
+
+            <EditText
+                android:id="@+id/kiyafet_text_create_place_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:ems="10"
+                android:hint="Kıyafet"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/pozisyon_text_create_place_ac"
+                app:layout_constraintTop_toBottomOf="@+id/pozisyon_text_create_place_ac" />
+
+            <EditText
+                android:id="@+id/ucret_text_create_place_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Ücret"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/kiyafet_text_create_place_ac"
+                app:layout_constraintTop_toBottomOf="@+id/kiyafet_text_create_place_ac" />
+
+            <Button
+                android:id="@+id/next_button_create_place_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="60dp"
+                android:onClick="next"
+                android:text="İleri"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ucret_text_create_place_ac" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
